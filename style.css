@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 32.67%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/pexels-ron-lach-7856020.jpg);
+}
+
+.credit {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.482);
+    font-family: 'Courier New', Courier, monospace;
+    bottom: 1rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    background: rgb(0,0,3);
+    background: linear-gradient(90deg, rgba(0,0,3,1) 0%, rgba(0,0,9,1) 21%);
+}
+
+.hero > span {
+    color: white;
+}

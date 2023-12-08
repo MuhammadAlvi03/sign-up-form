@@ -1,0 +1,7 @@
+Doing:
+Figuring out color palette
+
+To do:
+Create HTML elements for form and submit
+
+
