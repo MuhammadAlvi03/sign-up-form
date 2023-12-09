@@ -1,3 +1,27 @@
+
+@font-face {
+    font-family: 'herofont';
+    src:
+        url('./fonts/emotionengine-8yna-webfont.woff') format('woff'),
+        url('./fonts/emotionengine-8yna-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'frutiger';
+    src:
+        url('./fonts/frutiger_light-webfont.woff') format('woff'),
+        url('./fonts/frutiger_light-webfont.woff2') format('woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    font-family: 'frutiger';
+    font-weight: 700;
+}
+
 body {
     margin: 0;
 }
@@ -34,8 +58,45 @@ body {
     flex-grow: 1;
     box-sizing: border-box;
     background: rgb(255, 255, 255);
+    align-items: center;
 }
 
 .hero > span {
     color: rgb(0, 0, 0);
+    font-family: 'herofont';
+    font-size: 5rem;
+    text-wrap: nowrap;
+}
+
+.hero {
+    flex-grow: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+/* body */
+
+.sign-up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* submit */
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
 }

@@ -1,7 +1,8 @@
 Doing:
-Figuring out color palette
+Setup basic flexbox structure
 
 To do:
-Create HTML elements for form and submit sections
+Make fields required
+Style form controls
 
 
