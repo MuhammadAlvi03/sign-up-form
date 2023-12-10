@@ -18,20 +18,29 @@
             <span>Unlock Your Experience</span>
         </div>
         <div class="body">
-                <form class="sign-up" method="post">
-                            <label for="username">Username</label>
-                            <input type="text" name="username" id="username">
-                            <label for="mail">E-mail</label>
-                            <input type="email" name="useremail" id="mail">
-                            <label for="pwd">Password</label>
-                            <input type="password" name="userpass" id="pwd">
-                            <label for="pwdconfirm">Confirm password</label>
-                            <input type="password" name="userpassconfirm" id="pwdconfirm">
+                <form class="sign-up" method="post" autocomplete="off">
+                    <span>Create your account</span>
+                    <div class="form-input">
+                        <label for="username">&nbsp;Username</label>
+                        <input type="text" name="username" id="username" minlength="3" maxlength="16" required pattern="\w+">
+                    </div>
+                    <div class="form-input">
+                        <label for="mail">&nbsp;E-mail</label>
+                        <input type="email" name="useremail" id="mail" required placeholder="you@example.com">
+                    </div>
+                    <div class="form-input">
+                        <label for="pwd">&nbsp;Password</label>
+                        <input type="password" name="userpass" id="pwd" minlength="8" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="pwdconfirm">&nbsp;Confirm Password</label>
+                        <input type="password" name="userpassconfirm" id="pwdconfirm" minlength="8" required pattern='^[a-zA-Z0-9!@#$%^&*(),.?":{}|<>]+$ '>
+                    </div>
                 </form>
         </div>
         <div class="submit">
             <button type="submit">Create Account</button>
-            <span>Already signed up? <a href="">Log In</a></span>
+            <span>&nbsp;Already signed up? <a href="">Log In</a></span>
         </div>
     </div>
 </div>

@@ -17,9 +17,11 @@
     font-weight: normal;
 }
 
+
 * {
-    font-family: 'frutiger';
+    font-family: 'herofont';
     font-weight: 700;
+    color: white;
 }
 
 body {
@@ -49,6 +51,7 @@ body {
     color: rgba(255, 255, 255, 0.482);
     font-family: 'Courier New', Courier, monospace;
     bottom: 1rem;
+    font-family: 'frutiger';
 }
 
 .main {
@@ -57,12 +60,12 @@ body {
     height: 100%;
     flex-grow: 1;
     box-sizing: border-box;
-    background: rgb(255, 255, 255);
     align-items: center;
+    background: rgb(8, 8, 8);
 }
 
 .hero > span {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'herofont';
     font-size: 5rem;
     text-wrap: nowrap;
@@ -74,12 +77,14 @@ body {
     justify-content: center;
     align-items: center;
     width: 80%;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .body {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
 }
 
 /* body */
@@ -89,6 +94,48 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.2rem;
+}
+
+.sign-up > span {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-family: 'herofont';
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 1rem;
+}
+
+input {
+    border-width: 4px;
+    border-color: rgb(44, 112, 223);
+    border-radius: 5rem;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    color: black;
+    font-family: 'frutiger';
+}
+
+input:empty {
+    border-color: rgb(44, 112, 223);
+}
+
+input:valid {
+    border-color: rgb(17, 147, 21);
+    outline: none;
+}
+
+
+input:focus-visible:invalid {
+    border-color: red;
+    outline: none;
 }
 
 
@@ -98,5 +145,30 @@ body {
 .submit {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    width: 36%;
+}
+
+button {
+    width: fit-content;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 2.2rem;
+    background-color: rgb(28, 82, 168);
+    border: none;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submit > span {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+a {
+    font-size: 1.2rem;
+    color: rgb(28, 82, 168);
+    text-decoration: none;
 }

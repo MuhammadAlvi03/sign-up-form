@@ -1,8 +1,5 @@
-Doing:
-Setup basic flexbox structure
-
-To do:
-Make fields required
-Style form controls
-
-
+possible improvements:
+Mobile compatibility
+Make confirm password actually match
+Box-shadow gradient instead of border color on inputs
+Button styling
